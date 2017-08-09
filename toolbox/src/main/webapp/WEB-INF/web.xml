@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- webapp/WEB-INF/web.xml -->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>toolbox</display-name>
+  <welcome-file-list>
+    <welcome-file>login.do</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>MainPage</display-name>
+    <servlet-name>MainPage</servlet-name>
+    <servlet-class>toolbox.MainPage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MainPage</servlet-name>
+    <url-pattern>/MainPage</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ToolBoxServlet</display-name>
+    <servlet-name>ToolBoxServlet</servlet-name>
+    <servlet-class>tools.ToolBoxServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ToolBoxServlet</servlet-name>
+    <url-pattern>/ToolBoxServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
